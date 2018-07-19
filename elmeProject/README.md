@@ -4,6 +4,11 @@
 
 ## Build Setup
 
+
+## axios
+
+npm install axios --save-dev
+
 ``` bash
 # install dependencies
 npm install
