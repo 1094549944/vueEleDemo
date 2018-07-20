@@ -361,7 +361,7 @@ export default {
     background rgba(7, 17, 27, 0.8)
 
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
-    transition opacity 1s
+    transition opacity 0.1s
     opacity 0
     background rgba(7, 17, 27, 0)
 </style>

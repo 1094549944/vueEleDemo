@@ -30,15 +30,21 @@ export default {
     },
     itemClasses () {
       let result = []
+      //分数向下取（分数的2倍数）整，在除以2
       let score = Math.floor(this.score * 2) / 2
+      //获取有半星
       let hasDecimal = score % 1 !== 0
+      //向下取整，获取有几个全星
       let integer = Math.floor(score)
+      //插入全星
       for (let i = 0; i < integer; i++) {
         result.push(CLS_ON)
       }
+      //插入半星
       if (hasDecimal) {
         result.push(CLS_HALF)
       }
+      //插入灰色的星星
       while (result.length < LENGTH) {
         result.push(CLS_OFF)
       }
